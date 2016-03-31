@@ -1,8 +1,8 @@
-#Quick Start
+# Quick Start
 
-This 
+This is a quick start guide for docbase.
 
-##About Docbase
+## About Docbase
 
 [Docbase](https://github.com/appbaseio/Docbase) turns your **markdown** documentation project into a collaborative HTML site.
 
@@ -15,7 +15,7 @@ This
 * Built-in offline search
 * Open Source, MIT License
 
-##Getting Started
+## Getting Started
 
 Docbase comes with a yeoman generator that does all of the above with a simple ``yo docbase`` command.
 
@@ -106,4 +106,4 @@ To the file
   |  |  |  |-starting.md
   |  |  |  |-new_file.md
 ```
-###So lets do it
+### So lets do it
