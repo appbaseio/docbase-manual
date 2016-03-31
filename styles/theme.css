@@ -1,0 +1,23 @@
+.landing, .button, .navbar-fixed-top {
+	background-color: purple;
+}
+.index-container li a, .menu a, .menu a:visited, .navbar-default .navbar-nav>li>a:active, .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover, a, ul.nav li.dropdown:hover>a {
+	color: purple;
+}
+a:active, a:hover, .menu a:hover{
+	color: purple;	
+}
+ .tt-menu:before {
+ 	border-bottom-color: purple;
+ } 
+.paginationLink {
+	border-color: purple;
+}
+.paginationLink:hover {
+	background: purple;
+	border-color: purple;
+}
+.megamenu> li > ul > li.dropdown-header > a {
+  color: purple;
+  border-bottom-color: purple;
+}
