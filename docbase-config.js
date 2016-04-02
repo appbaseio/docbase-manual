@@ -1,15 +1,11 @@
 var docbaseConfig = {
-  "method": "file",
-  "map": {
-    "file": "map.json",
-    "path": ""
-  },
+  "method": "github",
   "generic": {
     "baseurl": "",
-    "path": "manual"
+    "path": ""
   },
   "file": {
-    "path": "manual"
+    "path": ""
   },
   "github": {
     "user": "appbaseio",
@@ -21,7 +17,8 @@ var docbaseConfig = {
   "indexHtml": "./html/main.html",
   "flatdocHtml": "./bower_components/docbase/html/flatdoc.html",
   "html5mode": false,
-  "default_version": null,
+  "default_version": "",
+  "manual_override": false,
   "versions" : {
   "v1": [
     {
@@ -71,10 +68,6 @@ var docbaseConfig = {
         {
           "name": "3col",
           "label": "Three columns"
-        },
-        {
-          "name": "markdown",
-          "label": "Markdown Options"
         }
       ]
     }
