@@ -16,7 +16,7 @@ var docbaseConfig = {
   },
   "indexHtml": "./html/main.html",
   "flatdocHtml": "./bower_components/docbase/html/flatdoc.html",
-  "html5mode": true,
+  "html5mode": false,
   "default_version": "",
   "manual_override": true,
   "versions" : {
