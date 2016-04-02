@@ -1,15 +1,11 @@
 var docbaseConfig = {
-  "method": "file",
-  "map": {
-    "file": "map.json",
-    "path": ""
-  },
+  "method": "github",
   "generic": {
     "baseurl": "",
-    "path": "manual"
+    "path": ""
   },
   "file": {
-    "path": "manual"
+    "path": ""
   },
   "github": {
     "user": "appbaseio",
@@ -21,63 +17,72 @@ var docbaseConfig = {
   "indexHtml": "./html/main.html",
   "flatdocHtml": "./bower_components/docbase/html/flatdoc.html",
   "html5mode": false,
-  "default_version": null,
-  "versions" : {
-  "v1": [
-    {
-      "name": "getting-started",
-      "label": "Getting Started",
-      "files": [
-        {
-          "name": "start",
-          "label": "Quick Start"
-        },
-        {
-          "name": "configure",
-          "label": "Configuration Options"
-        }
-      ]
-    },
-    {
-      "name": "features",
-      "label": "Features",
-      "files": [
-        {
-          "name": "search",
-          "label": "Search"
-        },
-        {
-          "name": "colors",
-          "label": "Colorful"
-        },
-        {
-          "name": "gh-pages",
-          "label": "Deploy to Github"
-        },
-        {
-          "name": "versions",
-          "label": "Versatile Navigation"
-        }
-      ]
-    },
-    {
-      "name": "layout",
-      "label": "Layout",
-      "files": [
-        {
-          "name": "navigation",
-          "label": "Site Navigation"
-        },
-        {
-          "name": "3col",
-          "label": "Three columns"
-        },
-        {
-          "name": "markdown",
-          "label": "Markdown Options"
-        }
-      ]
-    }
-  ]
-}
-}
+  "default_version": "",
+  "manual_override": false,
+  "versions": {
+    "v1": [
+      {
+        "label": "features",
+        "name": "features",
+        "files": [
+          {
+            "name": "colors",
+            "label": "colors"
+          },
+          {
+            "name": "gh-pages",
+            "label": "gh-pages"
+          },
+          {
+            "name": "search",
+            "label": "search"
+          },
+          {
+            "name": "versions",
+            "label": "versions"
+          },
+          {
+            "label": "index",
+            "name": "index"
+          }
+        ]
+      },
+      {
+        "label": "getting-started",
+        "name": "getting-started",
+        "files": [
+          {
+            "name": "configure",
+            "label": "configure"
+          },
+          {
+            "name": "start",
+            "label": "start"
+          },
+          {
+            "label": "index",
+            "name": "index"
+          }
+        ]
+      },
+      {
+        "label": "layout",
+        "name": "layout",
+        "files": [
+          {
+            "name": "3col",
+            "label": "3col"
+          },
+          {
+            "name": "navigation",
+            "label": "navigation"
+          },
+          {
+            "label": "index",
+            "name": "index"
+          }
+        ]
+      }
+    ]
+  }
+};
