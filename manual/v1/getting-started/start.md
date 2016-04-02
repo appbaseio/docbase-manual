@@ -41,7 +41,7 @@ Welcome to
 
 ...
 
-4. python -m SimpleHTTPServer 1234
+4. cd build_html && python -m SimpleHTTPServer 1234
 
 ████████████████████
 ```
