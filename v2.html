@@ -34,14 +34,12 @@
     <div class="pull-left  hidden-xs" id="folder-navbar">
       <ul class="nav navbar-nav folder-li">
         <!-- ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none; ">
-          <a ng-href=./v2/changelog/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="changelog" href=./v2/changelog/index.html>
-            <span ng-bind="folder.label" class="link-restrict ng-binding">changelog</span>
+          <a ng-href=./v2/changelog/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Changes" href=./v2/changelog/index.html>
+            <span ng-bind="folder.label" class="link-restrict ng-binding">Changes</span>
            </a>
           <ul class="dropdown-menu">
             <!-- ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
-              <a ng-href=./v2/changelog/changelog.html title="changelog" ng-bind="file.label" class="ng-binding" href=./v2/changelog/changelog.html>changelog</a>
-            </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope ng-hide">
-              <a ng-href=./v2/changelog/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v2/changelog/index.html>index</a>
+              <a ng-href=./v2/changelog/changelog.html title="Changelog" ng-bind="file.label" class="ng-binding" href=./v2/changelog/changelog.html>Changelog</a>
             </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope ng-hide">
               <a ng-href=./v2/changelog/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v2/changelog/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
@@ -55,12 +53,10 @@
             <!-- ngRepeat: folder in map[currentVersion] --><li class="col-sm-3 megamenu-item ng-scope" ng-repeat="folder in map[currentVersion]">
               <ul>
                 <li class="dropdown-header">
-                  <a ng-href=./v2/changelog/index.html class="map_folder ng-binding" data-toggle="dropdown" role="button" aria-expanded="false" ng-bind="folder.label" title="changelog" href=./v2/changelog/index.html>changelog</a>
+                  <a ng-href=./v2/changelog/index.html class="map_folder ng-binding" data-toggle="dropdown" role="button" aria-expanded="false" ng-bind="folder.label" title="Changes" href=./v2/changelog/index.html>Changes</a>
                 </li>
                 <!-- ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
-                  <a ng-href=./v2/changelog/changelog.html title="changelog" ng-bind="file.label" class="ng-binding" href=./v2/changelog/changelog.html>changelog</a>
-                </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope ng-hide">
-                  <a ng-href=./v2/changelog/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v2/changelog/index.html>index</a>
+                  <a ng-href=./v2/changelog/changelog.html title="Changelog" ng-bind="file.label" class="ng-binding" href=./v2/changelog/changelog.html>Changelog</a>
                 </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope ng-hide">
                   <a ng-href=./v2/changelog/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v2/changelog/index.html>index</a>
                 </li><!-- end ngRepeat: file in folder.files -->
@@ -120,12 +116,10 @@
                 <!-- ngRepeat: folder in map[currentVersion] --><li class="col-sm-3 megamenu-item ng-scope" ng-repeat="folder in map[currentVersion]">
                   <ul>
                     <li class="dropdown-header">
-                      <a ng-href=./v2/changelog/index.html class="map_folder ng-binding" data-toggle="dropdown" role="button" aria-expanded="false" ng-bind="folder.label" title="changelog" href=./v2/changelog/index.html>changelog</a>
+                      <a ng-href=./v2/changelog/index.html class="map_folder ng-binding" data-toggle="dropdown" role="button" aria-expanded="false" ng-bind="folder.label" title="Changes" href=./v2/changelog/index.html>Changes</a>
                     </li>
                     <!-- ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
-                      <a ng-href=./v2/changelog/changelog.html title="changelog" ng-bind="file.label" class="ng-binding" href=./v2/changelog/changelog.html>changelog</a>
-                    </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope ng-hide">
-                      <a ng-href=./v2/changelog/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v2/changelog/index.html>index</a>
+                      <a ng-href=./v2/changelog/changelog.html title="Changelog" ng-bind="file.label" class="ng-binding" href=./v2/changelog/changelog.html>Changelog</a>
                     </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope ng-hide">
                       <a ng-href=./v2/changelog/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v2/changelog/index.html>index</a>
                     </li><!-- end ngRepeat: file in folder.files -->

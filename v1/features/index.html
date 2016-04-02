@@ -34,50 +34,44 @@
     <div class="pull-left  hidden-xs" id="folder-navbar">
       <ul class="nav navbar-nav folder-li">
         <!-- ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none; ">
-          <a ng-href=./v1/features/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="features" href=./v1/features/index.html>
-            <span ng-bind="folder.label" class="link-restrict ng-binding">features</span>
+          <a ng-href=./v1/getting-started/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Getting Started" href=./v1/getting-started/index.html>
+            <span ng-bind="folder.label" class="link-restrict ng-binding">Getting Started</span>
            </a>
           <ul class="dropdown-menu">
             <!-- ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
-              <a ng-href=./v1/features/colors.html title="colors" ng-bind="file.label" class="ng-binding" href=./v1/features/colors.html>colors</a>
+              <a ng-href=./v1/getting-started/start.html title="Quick Start" ng-bind="file.label" class="ng-binding" href=./v1/getting-started/start.html>Quick Start</a>
             </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
-              <a ng-href=./v1/features/gh-pages.html title="gh-pages" ng-bind="file.label" class="ng-binding" href=./v1/features/gh-pages.html>gh-pages</a>
-            </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
-              <a ng-href=./v1/features/search.html title="search" ng-bind="file.label" class="ng-binding" href=./v1/features/search.html>search</a>
-            </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
-              <a ng-href=./v1/features/versions.html title="versions" ng-bind="file.label" class="ng-binding" href=./v1/features/versions.html>versions</a>
-            </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope ng-hide">
-              <a ng-href=./v1/features/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1/features/index.html>index</a>
-            </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope ng-hide">
-              <a ng-href=./v1/features/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1/features/index.html>index</a>
-            </li><!-- end ngRepeat: file in folder.files -->
-          </ul>
-        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none; ">
-          <a ng-href=./v1/getting-started/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="getting-started" href=./v1/getting-started/index.html>
-            <span ng-bind="folder.label" class="link-restrict ng-binding">getting-started</span>
-           </a>
-          <ul class="dropdown-menu">
-            <!-- ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
-              <a ng-href=./v1/getting-started/configure.html title="configure" ng-bind="file.label" class="ng-binding" href=./v1/getting-started/configure.html>configure</a>
-            </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
-              <a ng-href=./v1/getting-started/start.html title="start" ng-bind="file.label" class="ng-binding" href=./v1/getting-started/start.html>start</a>
-            </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope ng-hide">
-              <a ng-href=./v1/getting-started/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1/getting-started/index.html>index</a>
+              <a ng-href=./v1/getting-started/configure.html title="Configuration Options" ng-bind="file.label" class="ng-binding" href=./v1/getting-started/configure.html>Configuration Options</a>
             </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope ng-hide">
               <a ng-href=./v1/getting-started/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1/getting-started/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
         </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none; ">
-          <a ng-href=./v1/layout/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="layout" href=./v1/layout/index.html>
-            <span ng-bind="folder.label" class="link-restrict ng-binding">layout</span>
+          <a ng-href=./v1/features/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Features" href=./v1/features/index.html>
+            <span ng-bind="folder.label" class="link-restrict ng-binding">Features</span>
            </a>
           <ul class="dropdown-menu">
             <!-- ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
-              <a ng-href=./v1/layout/3col.html title="3col" ng-bind="file.label" class="ng-binding" href=./v1/layout/3col.html>3col</a>
+              <a ng-href=./v1/features/search.html title="Search" ng-bind="file.label" class="ng-binding" href=./v1/features/search.html>Search</a>
             </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
-              <a ng-href=./v1/layout/navigation.html title="navigation" ng-bind="file.label" class="ng-binding" href=./v1/layout/navigation.html>navigation</a>
+              <a ng-href=./v1/features/colors.html title="Colorful" ng-bind="file.label" class="ng-binding" href=./v1/features/colors.html>Colorful</a>
+            </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+              <a ng-href=./v1/features/gh-pages.html title="Deploy to Github" ng-bind="file.label" class="ng-binding" href=./v1/features/gh-pages.html>Deploy to Github</a>
+            </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+              <a ng-href=./v1/features/versions.html title="Versatile Navigation" ng-bind="file.label" class="ng-binding" href=./v1/features/versions.html>Versatile Navigation</a>
             </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope ng-hide">
-              <a ng-href=./v1/layout/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1/layout/index.html>index</a>
+              <a ng-href=./v1/features/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1/features/index.html>index</a>
+            </li><!-- end ngRepeat: file in folder.files -->
+          </ul>
+        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none; ">
+          <a ng-href=./v1/layout/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Layout" href=./v1/layout/index.html>
+            <span ng-bind="folder.label" class="link-restrict ng-binding">Layout</span>
+           </a>
+          <ul class="dropdown-menu">
+            <!-- ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+              <a ng-href=./v1/layout/navigation.html title="Site Navigation" ng-bind="file.label" class="ng-binding" href=./v1/layout/navigation.html>Site Navigation</a>
+            </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+              <a ng-href=./v1/layout/3col.html title="Three columns" ng-bind="file.label" class="ng-binding" href=./v1/layout/3col.html>Three columns</a>
             </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope ng-hide">
               <a ng-href=./v1/layout/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1/layout/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
@@ -91,33 +85,12 @@
             <!-- ngRepeat: folder in map[currentVersion] --><li class="col-sm-3 megamenu-item ng-scope" ng-repeat="folder in map[currentVersion]">
               <ul>
                 <li class="dropdown-header">
-                  <a ng-href=./v1/features/index.html class="map_folder ng-binding" data-toggle="dropdown" role="button" aria-expanded="false" ng-bind="folder.label" title="features" href=./v1/features/index.html>features</a>
+                  <a ng-href=./v1/getting-started/index.html class="map_folder ng-binding" data-toggle="dropdown" role="button" aria-expanded="false" ng-bind="folder.label" title="Getting Started" href=./v1/getting-started/index.html>Getting Started</a>
                 </li>
                 <!-- ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
-                  <a ng-href=./v1/features/colors.html title="colors" ng-bind="file.label" class="ng-binding" href=./v1/features/colors.html>colors</a>
+                  <a ng-href=./v1/getting-started/start.html title="Quick Start" ng-bind="file.label" class="ng-binding" href=./v1/getting-started/start.html>Quick Start</a>
                 </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
-                  <a ng-href=./v1/features/gh-pages.html title="gh-pages" ng-bind="file.label" class="ng-binding" href=./v1/features/gh-pages.html>gh-pages</a>
-                </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
-                  <a ng-href=./v1/features/search.html title="search" ng-bind="file.label" class="ng-binding" href=./v1/features/search.html>search</a>
-                </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
-                  <a ng-href=./v1/features/versions.html title="versions" ng-bind="file.label" class="ng-binding" href=./v1/features/versions.html>versions</a>
-                </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope ng-hide">
-                  <a ng-href=./v1/features/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1/features/index.html>index</a>
-                </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope ng-hide">
-                  <a ng-href=./v1/features/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1/features/index.html>index</a>
-                </li><!-- end ngRepeat: file in folder.files -->
-              </ul>
-            </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="col-sm-3 megamenu-item ng-scope" ng-repeat="folder in map[currentVersion]">
-              <ul>
-                <li class="dropdown-header">
-                  <a ng-href=./v1/getting-started/index.html class="map_folder ng-binding" data-toggle="dropdown" role="button" aria-expanded="false" ng-bind="folder.label" title="getting-started" href=./v1/getting-started/index.html>getting-started</a>
-                </li>
-                <!-- ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
-                  <a ng-href=./v1/getting-started/configure.html title="configure" ng-bind="file.label" class="ng-binding" href=./v1/getting-started/configure.html>configure</a>
-                </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
-                  <a ng-href=./v1/getting-started/start.html title="start" ng-bind="file.label" class="ng-binding" href=./v1/getting-started/start.html>start</a>
-                </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope ng-hide">
-                  <a ng-href=./v1/getting-started/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1/getting-started/index.html>index</a>
+                  <a ng-href=./v1/getting-started/configure.html title="Configuration Options" ng-bind="file.label" class="ng-binding" href=./v1/getting-started/configure.html>Configuration Options</a>
                 </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope ng-hide">
                   <a ng-href=./v1/getting-started/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1/getting-started/index.html>index</a>
                 </li><!-- end ngRepeat: file in folder.files -->
@@ -125,14 +98,29 @@
             </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="col-sm-3 megamenu-item ng-scope" ng-repeat="folder in map[currentVersion]">
               <ul>
                 <li class="dropdown-header">
-                  <a ng-href=./v1/layout/index.html class="map_folder ng-binding" data-toggle="dropdown" role="button" aria-expanded="false" ng-bind="folder.label" title="layout" href=./v1/layout/index.html>layout</a>
+                  <a ng-href=./v1/features/index.html class="map_folder ng-binding" data-toggle="dropdown" role="button" aria-expanded="false" ng-bind="folder.label" title="Features" href=./v1/features/index.html>Features</a>
                 </li>
                 <!-- ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
-                  <a ng-href=./v1/layout/3col.html title="3col" ng-bind="file.label" class="ng-binding" href=./v1/layout/3col.html>3col</a>
+                  <a ng-href=./v1/features/search.html title="Search" ng-bind="file.label" class="ng-binding" href=./v1/features/search.html>Search</a>
                 </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
-                  <a ng-href=./v1/layout/navigation.html title="navigation" ng-bind="file.label" class="ng-binding" href=./v1/layout/navigation.html>navigation</a>
+                  <a ng-href=./v1/features/colors.html title="Colorful" ng-bind="file.label" class="ng-binding" href=./v1/features/colors.html>Colorful</a>
+                </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+                  <a ng-href=./v1/features/gh-pages.html title="Deploy to Github" ng-bind="file.label" class="ng-binding" href=./v1/features/gh-pages.html>Deploy to Github</a>
+                </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+                  <a ng-href=./v1/features/versions.html title="Versatile Navigation" ng-bind="file.label" class="ng-binding" href=./v1/features/versions.html>Versatile Navigation</a>
                 </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope ng-hide">
-                  <a ng-href=./v1/layout/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1/layout/index.html>index</a>
+                  <a ng-href=./v1/features/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1/features/index.html>index</a>
+                </li><!-- end ngRepeat: file in folder.files -->
+              </ul>
+            </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="col-sm-3 megamenu-item ng-scope" ng-repeat="folder in map[currentVersion]">
+              <ul>
+                <li class="dropdown-header">
+                  <a ng-href=./v1/layout/index.html class="map_folder ng-binding" data-toggle="dropdown" role="button" aria-expanded="false" ng-bind="folder.label" title="Layout" href=./v1/layout/index.html>Layout</a>
+                </li>
+                <!-- ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+                  <a ng-href=./v1/layout/navigation.html title="Site Navigation" ng-bind="file.label" class="ng-binding" href=./v1/layout/navigation.html>Site Navigation</a>
+                </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+                  <a ng-href=./v1/layout/3col.html title="Three columns" ng-bind="file.label" class="ng-binding" href=./v1/layout/3col.html>Three columns</a>
                 </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope ng-hide">
                   <a ng-href=./v1/layout/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1/layout/index.html>index</a>
                 </li><!-- end ngRepeat: file in folder.files -->
@@ -192,33 +180,12 @@
                 <!-- ngRepeat: folder in map[currentVersion] --><li class="col-sm-3 megamenu-item ng-scope" ng-repeat="folder in map[currentVersion]">
                   <ul>
                     <li class="dropdown-header">
-                      <a ng-href=./v1/features/index.html class="map_folder ng-binding" data-toggle="dropdown" role="button" aria-expanded="false" ng-bind="folder.label" title="features" href=./v1/features/index.html>features</a>
+                      <a ng-href=./v1/getting-started/index.html class="map_folder ng-binding" data-toggle="dropdown" role="button" aria-expanded="false" ng-bind="folder.label" title="Getting Started" href=./v1/getting-started/index.html>Getting Started</a>
                     </li>
                     <!-- ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
-                      <a ng-href=./v1/features/colors.html title="colors" ng-bind="file.label" class="ng-binding" href=./v1/features/colors.html>colors</a>
+                      <a ng-href=./v1/getting-started/start.html title="Quick Start" ng-bind="file.label" class="ng-binding" href=./v1/getting-started/start.html>Quick Start</a>
                     </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
-                      <a ng-href=./v1/features/gh-pages.html title="gh-pages" ng-bind="file.label" class="ng-binding" href=./v1/features/gh-pages.html>gh-pages</a>
-                    </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
-                      <a ng-href=./v1/features/search.html title="search" ng-bind="file.label" class="ng-binding" href=./v1/features/search.html>search</a>
-                    </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
-                      <a ng-href=./v1/features/versions.html title="versions" ng-bind="file.label" class="ng-binding" href=./v1/features/versions.html>versions</a>
-                    </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope ng-hide">
-                      <a ng-href=./v1/features/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1/features/index.html>index</a>
-                    </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope ng-hide">
-                      <a ng-href=./v1/features/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1/features/index.html>index</a>
-                    </li><!-- end ngRepeat: file in folder.files -->
-                  </ul>
-                </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="col-sm-3 megamenu-item ng-scope" ng-repeat="folder in map[currentVersion]">
-                  <ul>
-                    <li class="dropdown-header">
-                      <a ng-href=./v1/getting-started/index.html class="map_folder ng-binding" data-toggle="dropdown" role="button" aria-expanded="false" ng-bind="folder.label" title="getting-started" href=./v1/getting-started/index.html>getting-started</a>
-                    </li>
-                    <!-- ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
-                      <a ng-href=./v1/getting-started/configure.html title="configure" ng-bind="file.label" class="ng-binding" href=./v1/getting-started/configure.html>configure</a>
-                    </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
-                      <a ng-href=./v1/getting-started/start.html title="start" ng-bind="file.label" class="ng-binding" href=./v1/getting-started/start.html>start</a>
-                    </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope ng-hide">
-                      <a ng-href=./v1/getting-started/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1/getting-started/index.html>index</a>
+                      <a ng-href=./v1/getting-started/configure.html title="Configuration Options" ng-bind="file.label" class="ng-binding" href=./v1/getting-started/configure.html>Configuration Options</a>
                     </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope ng-hide">
                       <a ng-href=./v1/getting-started/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1/getting-started/index.html>index</a>
                     </li><!-- end ngRepeat: file in folder.files -->
@@ -226,14 +193,29 @@
                 </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="col-sm-3 megamenu-item ng-scope" ng-repeat="folder in map[currentVersion]">
                   <ul>
                     <li class="dropdown-header">
-                      <a ng-href=./v1/layout/index.html class="map_folder ng-binding" data-toggle="dropdown" role="button" aria-expanded="false" ng-bind="folder.label" title="layout" href=./v1/layout/index.html>layout</a>
+                      <a ng-href=./v1/features/index.html class="map_folder ng-binding" data-toggle="dropdown" role="button" aria-expanded="false" ng-bind="folder.label" title="Features" href=./v1/features/index.html>Features</a>
                     </li>
                     <!-- ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
-                      <a ng-href=./v1/layout/3col.html title="3col" ng-bind="file.label" class="ng-binding" href=./v1/layout/3col.html>3col</a>
+                      <a ng-href=./v1/features/search.html title="Search" ng-bind="file.label" class="ng-binding" href=./v1/features/search.html>Search</a>
                     </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
-                      <a ng-href=./v1/layout/navigation.html title="navigation" ng-bind="file.label" class="ng-binding" href=./v1/layout/navigation.html>navigation</a>
+                      <a ng-href=./v1/features/colors.html title="Colorful" ng-bind="file.label" class="ng-binding" href=./v1/features/colors.html>Colorful</a>
+                    </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+                      <a ng-href=./v1/features/gh-pages.html title="Deploy to Github" ng-bind="file.label" class="ng-binding" href=./v1/features/gh-pages.html>Deploy to Github</a>
+                    </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+                      <a ng-href=./v1/features/versions.html title="Versatile Navigation" ng-bind="file.label" class="ng-binding" href=./v1/features/versions.html>Versatile Navigation</a>
                     </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope ng-hide">
-                      <a ng-href=./v1/layout/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1/layout/index.html>index</a>
+                      <a ng-href=./v1/features/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1/features/index.html>index</a>
+                    </li><!-- end ngRepeat: file in folder.files -->
+                  </ul>
+                </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="col-sm-3 megamenu-item ng-scope" ng-repeat="folder in map[currentVersion]">
+                  <ul>
+                    <li class="dropdown-header">
+                      <a ng-href=./v1/layout/index.html class="map_folder ng-binding" data-toggle="dropdown" role="button" aria-expanded="false" ng-bind="folder.label" title="Layout" href=./v1/layout/index.html>Layout</a>
+                    </li>
+                    <!-- ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+                      <a ng-href=./v1/layout/navigation.html title="Site Navigation" ng-bind="file.label" class="ng-binding" href=./v1/layout/navigation.html>Site Navigation</a>
+                    </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+                      <a ng-href=./v1/layout/3col.html title="Three columns" ng-bind="file.label" class="ng-binding" href=./v1/layout/3col.html>Three columns</a>
                     </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope ng-hide">
                       <a ng-href=./v1/layout/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1/layout/index.html>index</a>
                     </li><!-- end ngRepeat: file in folder.files -->
@@ -270,23 +252,23 @@
 	<div class="container">
 		<div class="row">
 			<h1 class="col-xs-12 ng-binding">
-				features (5 files)
+				features (4 files)
 			</h1>
 		</div>	
 		<div class="row indexLinkContainer">
 			<ul class="col-xs-12 col-sm-6">
 				<!-- ngRepeat: (key, file) in indexList --><!-- ngIf: file.name != 'index' && (key+1) <= indexList.length/2 --><li class="col-xs-12 ng-scope" data-ng-repeat="(key, file) in indexList" data-ng-if="file.name != 'index' &amp;&amp; (key+1) &lt;= indexList.length/2">
-					<a href=./v1/features/colors.html class="col-xs-12 ng-binding"> colors</a>
-				</li><!-- end ngIf: file.name != 'index' && (key+1) <= indexList.length/2 --><!-- end ngRepeat: (key, file) in indexList --><!-- ngIf: file.name != 'index' && (key+1) <= indexList.length/2 --><li class="col-xs-12 ng-scope" data-ng-repeat="(key, file) in indexList" data-ng-if="file.name != 'index' &amp;&amp; (key+1) &lt;= indexList.length/2">
-					<a href=./v1/features/gh-pages.html class="col-xs-12 ng-binding"> gh-pages</a>
-				</li><!-- end ngIf: file.name != 'index' && (key+1) <= indexList.length/2 --><!-- end ngRepeat: (key, file) in indexList --><!-- ngIf: file.name != 'index' && (key+1) <= indexList.length/2 --><li class="col-xs-12 ng-scope" data-ng-repeat="(key, file) in indexList" data-ng-if="file.name != 'index' &amp;&amp; (key+1) &lt;= indexList.length/2">
 					<a href=./v1/features/search.html class="col-xs-12 ng-binding"> search</a>
+				</li><!-- end ngIf: file.name != 'index' && (key+1) <= indexList.length/2 --><!-- end ngRepeat: (key, file) in indexList --><!-- ngIf: file.name != 'index' && (key+1) <= indexList.length/2 --><li class="col-xs-12 ng-scope" data-ng-repeat="(key, file) in indexList" data-ng-if="file.name != 'index' &amp;&amp; (key+1) &lt;= indexList.length/2">
+					<a href=./v1/features/colors.html class="col-xs-12 ng-binding"> colors</a>
 				</li><!-- end ngIf: file.name != 'index' && (key+1) <= indexList.length/2 --><!-- end ngRepeat: (key, file) in indexList --><!-- ngIf: file.name != 'index' && (key+1) <= indexList.length/2 --><!-- end ngRepeat: (key, file) in indexList --><!-- ngIf: file.name != 'index' && (key+1) <= indexList.length/2 --><!-- end ngRepeat: (key, file) in indexList --><!-- ngIf: file.name != 'index' && (key+1) <= indexList.length/2 --><!-- end ngRepeat: (key, file) in indexList -->
 			</ul>
 			<ul class="col-xs-12 col-sm-6">
-				<!-- ngRepeat: (key, file) in indexList --><!-- ngIf: file.name != 'index' && (key+1) > indexList.length/2 --><!-- end ngRepeat: (key, file) in indexList --><!-- ngIf: file.name != 'index' && (key+1) > indexList.length/2 --><!-- end ngRepeat: (key, file) in indexList --><!-- ngIf: file.name != 'index' && (key+1) > indexList.length/2 --><!-- end ngRepeat: (key, file) in indexList --><!-- ngIf: file.name != 'index' && (key+1) > indexList.length/2 --><li class="col-xs-12 ng-scope" data-ng-repeat="(key, file) in indexList" data-ng-if="file.name != 'index' &amp;&amp; (key+1) &gt; indexList.length/2">
+				<!-- ngRepeat: (key, file) in indexList --><!-- ngIf: file.name != 'index' && (key+1) > indexList.length/2 --><!-- end ngRepeat: (key, file) in indexList --><!-- ngIf: file.name != 'index' && (key+1) > indexList.length/2 --><!-- end ngRepeat: (key, file) in indexList --><!-- ngIf: file.name != 'index' && (key+1) > indexList.length/2 --><li class="col-xs-12 ng-scope" data-ng-repeat="(key, file) in indexList" data-ng-if="file.name != 'index' &amp;&amp; (key+1) &gt; indexList.length/2">
+					<a href=./v1/features/gh-pages.html class="col-xs-12 ng-binding"> gh-pages</a>
+				</li><!-- end ngIf: file.name != 'index' && (key+1) > indexList.length/2 --><!-- end ngRepeat: (key, file) in indexList --><!-- ngIf: file.name != 'index' && (key+1) > indexList.length/2 --><li class="col-xs-12 ng-scope" data-ng-repeat="(key, file) in indexList" data-ng-if="file.name != 'index' &amp;&amp; (key+1) &gt; indexList.length/2">
 					<a href=./v1/features/versions.html class="col-xs-12 ng-binding"> versions</a>
-				</li><!-- end ngIf: file.name != 'index' && (key+1) > indexList.length/2 --><!-- end ngRepeat: (key, file) in indexList --><!-- ngIf: file.name != 'index' && (key+1) > indexList.length/2 --><!-- end ngRepeat: (key, file) in indexList --><!-- ngIf: file.name != 'index' && (key+1) > indexList.length/2 --><!-- end ngRepeat: (key, file) in indexList -->
+				</li><!-- end ngIf: file.name != 'index' && (key+1) > indexList.length/2 --><!-- end ngRepeat: (key, file) in indexList --><!-- ngIf: file.name != 'index' && (key+1) > indexList.length/2 --><!-- end ngRepeat: (key, file) in indexList -->
 			</ul>
 		</div>
 	</div>
