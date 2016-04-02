@@ -76,10 +76,10 @@ var docbaseConfig = {
     {
       "name": "changelog",
       "label": "Changes",
-      "files": [
+      "files": [{
         "name": "changelog",
         "label": "Changelog"
-      ]
+      }]
     }
   ]
 }
