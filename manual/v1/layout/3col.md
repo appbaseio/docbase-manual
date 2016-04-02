@@ -1,13 +1,21 @@
-## Different Layout Support
+# Three Columns Layout
 
-### 2-Col
+Docbase builds a sidebar navigation column from the content to form a 2-column layout. However, it also supports a three column layout for things like API references where having a third column for showing code snippets is useful.
 
-Ideal for introduction and tutorial docs.
+## Example
 
-### 3-Col
+![](https://i.imgur.com/0PNqxJT.png)
 
-Ideal for API references with code examples.
+Image: A three-column layout with docbase. You can see it live at [http://docs.appbase.io/scalr/javascript/api-reference.html](http://docs.appbase.io/scalr/javascript/api-reference.html).
 
-### Big Headings
+## Creating a three-column layout
 
-Stylize headings differently with ease.
+If you wish to give a particular markdown page a three-column layout, then prefix the page with a JSON object that has a field ``threeColumns`` set to **true** as shown below.
+
+```
+{"threeColumns":true}
+
+# heading
+
+Rest of the page content.
+```
