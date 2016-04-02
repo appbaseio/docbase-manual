@@ -71,6 +71,16 @@ var docbaseConfig = {
         }
       ]
     }
+  ],
+  "v2  (alpha)": [
+    {
+      "name": "changelog",
+      "label": "Changes",
+      "files": [
+        "name": "changelog",
+        "label": "Changelog"
+      ]
+    }
   ]
 }
 }
