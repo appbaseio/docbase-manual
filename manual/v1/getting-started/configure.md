@@ -25,8 +25,9 @@ var docbaseConfig = {
   },
   "indexHtml": "./html/main.html",
   "flatdocHtml": "./bower_components/docbase/html/flatdoc.html",
-  "html5mode": false,
-  "default_version": null,
+  "default_version": "",
+  "manual_override": "false",
+  "publish": "local",
   "versions" : {
    "v1": [{
      "name": "sample",
@@ -55,6 +56,7 @@ var docbaseConfig = {
 };
 ```
 
+### Breaking Down
 
 * ``method`` - Indicates the mode for reading the markdown files,
 * ``file`` - If method is file, docbase will read the ``path`` option from here.
@@ -63,5 +65,7 @@ var docbaseConfig = {
 * ``indexHTML`` is a path to the main html file. You can change the structure, put custom links or altogether provide a different file.
 * ``versions`` is a nested JSON layout for the .md files. It allows specifying a sequential order to the files and providing labels. ``versions`` is optional when using the ``github`` method, as docbase can infer the layout from github's APIs.
 * ``default_version`` - The main version that you want for your docs, particularly useful when not specifying the ``versions`` option.
+* ``manual_override`` - If set to true, docbase takes the layout from the config file.
+* ``publish`` - Can be either "local" or "github", denotes where docbase will be deployed.
 
 **``Note:``** ``github.access_token`` is base64 encoded to prevent spamming. It is however not secure, we recommend only providing the necessary permissions (public_repo) for the token. Docbase uses the token to overcome the default rate-limiting restrictions by Github's API, and providing the token is optional.

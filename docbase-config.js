@@ -72,7 +72,7 @@ var docbaseConfig = {
       ]
     }
   ],
-  "v2 (alpha)": [
+  "v2": [
     {
       "name": "changelog",
       "label": "Changes",
