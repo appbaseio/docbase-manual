@@ -33,7 +33,7 @@
   <div class="collapse navbar-collapse" id="navbar-collapse">
     <div class="pull-left  hidden-xs" id="folder-navbar">
       <ul class="nav navbar-nav folder-li">
-        <!-- ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
+        <!-- ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none; ">
           <a ng-href=./v2/changelog/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Changes" href=./v2/changelog/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Changes</span>
            </a>
@@ -46,7 +46,7 @@
           </ul>
         </li><!-- end ngRepeat: folder in map[currentVersion] -->
       </ul>
-      <ul class="nav navbar-nav category-li">
+      <ul class="nav navbar-nav category-li" style="display: block; ">
         <li class="dropdown menu-large">
           <a class="dropdown-toggle pointer" data-toggle="dropdown">more <b class="caret"></b></a>
           <ul class="dropdown-menu megamenu row">
@@ -69,7 +69,7 @@
     <div class="pull-right" id="other-navs">
       <ul class="nav navbar-nav navbar-right">
          <li class="dropdown search-dropdown">
-          <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}"><input class="search_field form-control dropdown-toggle appbase-search" type="text" placeholder="search"></div>
+          <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}" style="right: 50px; "><input class="search_field form-control dropdown-toggle appbase-search" type="text" placeholder="search"></div>
         </li>
         <li class="dropdown  hidden-xs">
           <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
