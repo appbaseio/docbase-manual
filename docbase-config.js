@@ -32,6 +32,10 @@ var docbaseConfig = {
         {
           "name": "configure",
           "label": "Configuration Options"
+        },
+        {
+          "name": "installation-issues",
+          "label": "Installation FAQs"
         }
       ]
     },

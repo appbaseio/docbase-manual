@@ -2,7 +2,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
   <meta name="viewport" content="width=device-width">
-  <base href="">
+  <base href="../../">
   <title>Documentation</title>
   <link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
@@ -17,8 +17,8 @@
   <link rel="stylesheet" type="text/css" href="./styles/theme.css">
   
 <script type="text/javascript" async="" src="http://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script></head>
-<body role="flatdoc">
-  <!-- ngView:  --><div ng-view="" class="ng-scope"><!-- ngInclude: 'html/navbar.html' --><nav class="navbar navbar-default navbar-fixed-top ng-scope" ng-include="'html/navbar.html'"><div class="container-fluid ng-scope">
+<body role="flatdoc" class="no-literate">
+  <!-- ngView:  --><div ng-view="" class="ng-scope"><!-- ngInclude: navbarHtml --><nav class="navbar navbar-default navbar-fixed-top ng-scope" ng-include="navbarHtml"><div class="container-fluid ng-scope">
   <div class="navbar-header">
     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
       <span class="sr-only">Toggle navigation</span>
@@ -33,7 +33,7 @@
   <div class="collapse navbar-collapse" id="navbar-collapse">
     <div class="pull-left  hidden-xs" id="folder-navbar">
       <ul class="nav navbar-nav folder-li">
-        <!-- ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
+        <!-- ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none; ">
           <a ng-href=./v1/getting-started/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Getting Started" href=./v1/getting-started/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Getting Started</span>
            </a>
@@ -48,7 +48,7 @@
               <a ng-href=./v1/getting-started/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1/getting-started/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
-        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
+        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none; ">
           <a ng-href=./v1/features/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Features" href=./v1/features/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Features</span>
            </a>
@@ -65,7 +65,7 @@
               <a ng-href=./v1/features/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1/features/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
-        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
+        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none; ">
           <a ng-href=./v1/layout/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Layout" href=./v1/layout/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Layout</span>
            </a>
@@ -80,7 +80,7 @@
           </ul>
         </li><!-- end ngRepeat: folder in map[currentVersion] -->
       </ul>
-      <ul class="nav navbar-nav category-li">
+      <ul class="nav navbar-nav category-li" style="display: block; ">
         <li class="dropdown menu-large">
           <a class="dropdown-toggle pointer" data-toggle="dropdown">more <b class="caret"></b></a>
           <ul class="dropdown-menu megamenu row">
@@ -137,7 +137,7 @@
     <div class="pull-right" id="other-navs">
       <ul class="nav navbar-nav navbar-right">
          <li class="dropdown search-dropdown">
-          <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}"><span class="twitter-typeahead" style="position: relative; display: inline-block; "><input class="search_field form-control dropdown-toggle appbase-search tt-hint" type="text" style="position: absolute; top: 0px; left: 0px; border-top-color: transparent; border-right-color: transparent; border-bottom-color: transparent; border-left-color: transparent; box-shadow: none; opacity: 1; background-attachment: scroll; background-clip: border-box; background-color: rgb(255, 255, 255); background-image: none; background-origin: padding-box; background-size:  ; background-position: 0% 0%; background-repeat: repeat repeat; " readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr"><input class="search_field form-control dropdown-toggle appbase-search tt-input" type="text" placeholder="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent; "><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: 'Helvetica Neue', 'Open Sans', sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none; "></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none; "><div class="tt-dataset tt-dataset-titles"></div></div></span></div>
+          <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}" style="right: 50px; "><span class="twitter-typeahead" style="position: relative; display: inline-block; "><input class="search_field form-control dropdown-toggle appbase-search tt-hint" type="text" style="position: absolute; top: 0px; left: 0px; border-top-color: transparent; border-right-color: transparent; border-bottom-color: transparent; border-left-color: transparent; box-shadow: none; opacity: 1; background-attachment: scroll; background-clip: border-box; background-color: rgb(255, 255, 255); background-image: none; background-origin: padding-box; background-size:  ; background-position: 0% 0%; background-repeat: repeat repeat; " readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr"><input class="search_field form-control dropdown-toggle appbase-search tt-input" type="text" placeholder="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent; "><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: 'Helvetica Neue', 'Open Sans', sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none; "></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none; "><div class="tt-dataset tt-dataset-titles"></div></div></span></div>
         </li>
         <li class="dropdown  hidden-xs">
           <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -236,22 +236,32 @@
   </div><!-- /.navbar-collapse -->
 </div><!-- /.container-fluid -->
 </nav>
-<div class="container-fluid push ng-scope">
-  <div class="row">
-    <div class="col-xs-12 landing">
-      <h1>Doc<b>base</b> manual</h1>
-    </div>
-
-    <!--div class="col-xs-12 list">
-      <a class="col-xs-12 col-sm-6 col-md-4 col-lg-3"
-        ng-repeat="folder in map[currentVersion]"
-        href="#/{{currentVersion}}/{{folder.name}}/index"
-        ng-bind="folder.label">
-      </a>
-		</div-->
+<div role="flatdoc" class="content-root ng-scope" data-ng-show="!index">
+  <div class="menubar fixed">
+    <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="installation-issues-item" class="level-1"><a id="installation-issues-link" href="./v1/getting-started/installation-issues.html#installation-issues" class="level-1" pref="#installation-issues">Installation Issues</a><ul class="level-2" id="installation-issues-list"><li id="installation-issues-installing-node-and-npm-item" class="level-2"><a id="installation-issues-installing-node-and-npm-link" href="./v1/getting-started/installation-issues.html#installation-issues-installing-node-and-npm" class="level-2" pref="#installation-issues-installing-node-and-npm">Installing node and npm</a></li><li id="installation-issues-installing-yeoman-item" class="level-2"><a id="installation-issues-installing-yeoman-link" href="./v1/getting-started/installation-issues.html#installation-issues-installing-yeoman" class="level-2" pref="#installation-issues-installing-yeoman">Installing yeoman</a></li><li id="installation-issues-installing-grunt-cli-and-bower-item" class="level-2"><a id="installation-issues-installing-grunt-cli-and-bower-link" href="./v1/getting-started/installation-issues.html#installation-issues-installing-grunt-cli-and-bower" class="level-2" pref="#installation-issues-installing-grunt-cli-and-bower">Installing grunt-cli and bower</a></li><li id="installation-issues-running-yo-docbase-item" class="level-2"><a id="installation-issues-running-yo-docbase-link" href="./v1/getting-started/installation-issues.html#installation-issues-running-yo-docbase" class="level-2" pref="#installation-issues-running-yo-docbase">Running yo docbase</a></li><li id="installation-issues-the-phantom-menace-err-phantom-item" class="level-2"><a id="installation-issues-the-phantom-menace-err-phantom-link" href="./v1/getting-started/installation-issues.html#installation-issues-the-phantom-menace-err-phantom" class="level-2" pref="#installation-issues-the-phantom-menace-err-phantom">The phantom menace .. err phantom</a></li></ul></li></ul></li></ul></div>
   </div>
+  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last modified on: <a href="https://github.com/appbaseio/docbase-manual/commit/f5aaf003be02ac08983ee39461d99490487961e1">Apr 4, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/siddharthlatest" title="siddharthlatest" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/630042?v=3" alt="siddharthlatest"></a></div><div class="contributors_header nobg"><a class="edit-btn" href="https://github.com/appbaseio/docbase-manual/tree/master/manual/v1/getting-started/installation-issues.md" target="_blank"><span class="fa fa-pencil"> Edit this page on Github </span></a></div></div><div class="clearFix"></div><h1 id="installation-issues">Installation Issues</h1><p>While using the <code>yo docbase</code> command is generally straightforward, it relies on <code>node</code> and <code>npm</code> to work reliably on the system. Due to the constant changes and compatibility issues, there might be some installation issues. Here, we try to document the most frequent issues we came across while developing and point to a solution that worked for those issues.</p><h2 id="installation-issues-installing-node-and-npm">Installing node and npm</h2><p>If you don’t have <code>node</code> and <code>npm</code> installed, we recommend installing it from the official site <a href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a>. Your OS’s package manager might have legacy versions.</p><h2 id="installation-issues-installing-yeoman">Installing yeoman</h2><p>Installing yeoman should be straightforward. You can apply <code>sudo</code> as a prefix to this command.</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">npm install </span><span class="pun">-</span><span class="pln">g yo</span></code></pre><p>One issue we noted with using yeoman is an EACCESS error where yeoman can’t read the configuration file at ~/.config/configstore/insight-yo.json. If you are seeing this, this thread is relevant <a href="https://github.com/yeoman/yeoman.github.io/issues/282">https://github.com/yeoman/yeoman.github.io/issues/282</a> (look for setting group permissions for parent directories).</p><h2 id="installation-issues-installing-grunt-cli-and-bower">Installing grunt-cli and bower</h2><p>docbase assumes that user has <code>grunt-cli</code> and <code>bower</code> packages installed. If you don’t have them (yet), you can install them using:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">npm install </span><span class="pun">-</span><span class="pln">g grunt</span><span class="pun">-</span><span class="pln">cli
+npm install </span><span class="pun">-</span><span class="pln">g bower</span></code></pre><h2 id="installation-issues-running-yo-docbase">Running <code>yo docbase</code></h2><p><code>yo docbase</code> should be straightforward to run. It generates a docbase-config.json file and performs <code>npm install</code>, <code>bower install</code> and <code>grunt</code> operations. If the generator fails at some point, you can rerun the individual commands as</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">npm install
+bower install
+grunt</span></code></pre><p><code>Note:</code> If you are running bower as a root user, you will need to run <code>bower install --allow-root</code>.</p><h2 id="installation-issues-the-phantom-menace-err-phantom">The phantom menace .. err phantom</h2><p>docbase’s process of creating html pages is two pronged: It first creates a SPA and then relies on <a href="https://www.npmjs.com/package/phantom">phantom</a> to transfrom the SPA routes to an HTML site. There are some known issues with phantom:</p><ul>
+<li>spawn grunt ENOENT while trying to install phantom@0.7.2. Try installing <code>npm install -g phantomjs-prebuilt</code> before proceeding ahead. Phantom is a node module that spawns a phantomjs process and interacts with it via socket.io, so if you see this error - most likely, you are missing the <code>phantomjs-prebuilt</code> module.</li>
+<li>Error while loading shared library. Typically, the solution is to install the library via your package manager: <code>apt-get install libfontconfig</code> if you are on ubuntu and phantomjs is complaining about missing libfontconfig. More here - <a href="https://github.com/giakki/uncss/issues/165">https://github.com/giakki/uncss/issues/165</a>  </li>
+<li>Caching is enabled after some bytes are written - <a href="https://github.com/ariya/phantomjs/issues/13165">https://github.com/ariya/phantomjs/issues/13165</a>. The key here is to remove the <code>build_html/</code> directory and then proceeding to run the <code>grunt</code> task again.  </li>
+</ul></div>
+  	<div class="footer content">
+		<div class="row">
+			<div class="col-xs-12">	
+				<span data-ng-class="{disabled: paginationLinks.prev == null}" class="pull-left">
+					<a href=./v1/getting-started/configure.html class="paginationLink pull-left">Previous</a>
+				</span>
+				<span data-ng-class="{disabled: paginationLinks.next == null}" class="pull-right">
+					<a href=./v1/features/search.html class="paginationLink pull-right">Next</a>
+				</span>
+			</div>
+		</div>
+	</div>
 </div>
-</div>
+<!-- ngIf: index --></div>
 
  <script type="text/javascript" src="./docbase-config.js"></script>
   <script type="text/javascript" src="./bower_components/docbase/dist/js/main.unique.js"></script>
