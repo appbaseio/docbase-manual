@@ -44,7 +44,7 @@ Docbase's process of creating html pages is two pronged: It first creates a SPA 
 
 - spawn grunt ENOENT while trying to install phantom@0.7.2. Try installing ``npm install -g phantomjs-prebuilt`` before proceeding ahead. Phantom is a node module that spawns a phantomjs process and interacts with it via socket.io, so if you see this error - most likely, you are missing the ``phantomjs-prebuilt`` module.  
 
-- Error while loading shared library. Typically, the solution is to install the library via your package manager: ``apt-get install libfontconfig`` if you are on ubuntu and phantomjs is complaining about missing libfontconfig, [More here](https://github.com/giakki/uncss/issues/165).  
+- Error while loading shared library. Typically, the solution is to install the library via your package manager: ``apt-get install libfontconfig`` if you are on ubuntu and phantomjs is complaining about missing libfontconfig, [more here](https://github.com/giakki/uncss/issues/165).  
 
 - Caching is enabled after some bytes are written - [issue](https://github.com/ariya/phantomjs/issues/13165). The key here is to remove the ``build_html/`` directory and then proceeding to run the ``grunt`` task again.  
 
