@@ -41,9 +41,9 @@ Welcome to
 
 ...
 
-4. cd build_html && python -m SimpleHTTPServer 1234
-
 ████████████████████
+
+Docbase is live at http://127.0.0.1:1234
 ```
 
 ## Generator options
@@ -52,7 +52,7 @@ Welcome to
 
 ```
 1. Where is your .md project hosted? (Use arrow keys)
-❯ Magic (⊃｡•́‿•̀｡)⊃━☆ﾟ.*･｡ﾟ
+❯ Magic *(۞ ͜  ۞)*
   Filesystem
   Github
   External URL
