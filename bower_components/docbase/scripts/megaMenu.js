@@ -55,6 +55,7 @@
 			if(total_width < 768) {
 				adjust_searchbar();
 			}
+			footer_at_bottom();
 		}
 
 		function adjust_searchbar() {
@@ -62,6 +63,11 @@
 			var search_width = 300;
 			var right_margin = parseInt((total_width - search_width)/2);
 			$('.search-form').css('right', right_margin+'px');
+		}
+
+		function footer_at_bottom() {
+			var content_height = $(window).height() - $('.navbar').height() - $('.powered-by').height() - 30;
+			$('.docbase-main').css({'min-height': content_height+'px'});
 		}
 
 		menu_set();

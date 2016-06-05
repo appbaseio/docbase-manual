@@ -1,87 +1,91 @@
 # Docbase
 [![Build Status](https://travis-ci.org/appbaseio/Docbase.svg?branch=master)](https://travis-ci.org/appbaseio/Docbase)
 
-A fast and flexible single-page documentation engine. Create documentation hubs with versioning and beautifully rendered menus; works with your existing (or new) Github hosted markdown files.
+Turn .md files into a beautiful documentation hub with versioning and beautifully rendered menus. 
 
-### Used by:
+* Docbase can read files that are hosted on github, locally or a http:// server.
+* It can publish documentation hubs to github pages (via travis) or locally which can be served with as static files with a http:// server.
 
-[![](http://app.zeedhi.com/teknisa/docs/images/log.png)](http://app.zeedhi.com/teknisa/docs/#/) [![](http://i.imgur.com/0MwyOZL.png?1)](http://docs.appbase.io)
+Docbase comes with a yeoman generator that turns the installation and configuration process into a piece of cake.
+
+![A rendered documentation site](http://g.recordit.co/Odu27H3nAm.gif)
+
+### Example Hubs built with Docbase
+
+1. [Airbnb JS Style guide](https://farhan687.github.io/airbnb)  
+2. [Redis Docs](https://farhan687.github.io/redis)  
+3. [EmberJS Guide](https://farhan687.github.io/emberjs)
 
 ## Installation
 
-    bower install docbase --save
-
-## Usage
-
-### Step 1: Configuring Index.html
-
-Copy the index.html file from docbase's root folder. You can change the parameters for your project's spec in this file.
-
-```bash
-  mv bower_components/docbase/sample-index.html index.html
-
 ```
-Now Copy the sample-docbase-config.js to your project, it is the configeration file of your documentation project!
+1. npm install -g yo
 
+█████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
 
-```bash
- mv bower_components/docbase/sample-docbase-config.js docbase-config.js
-```
+2. npm install -g generator-docbase
 
-where,  
-* ``method`` indicates the source of markdown files and can be one of "github", "file" or "generic".
-* ``github`` is a top level field that is relevant when the selected method is ``github``. It has obvious parameters such as ``user``, ``repo``, ``branch`` and ``editGithubBtn``.
-* ``file`` similarly is a top level field that is relevant when the selected method is ``file``. It only has one parameter ``path``, a relative / absolute location from the root directory where the docs are hosted.
-* ``generic`` is a top level field that is relevant when the selected method is ``generic``. This can take markdown files hosted anywhere - github, bitbucket, dropbox, your own servers. It only needs a ``baseurl`` and a relative path under which the docs are kept.
-* ``versions`` is where you specify the docs directory structure and can add pretty labels.
-** It looks something like this:
-```js
-"map" : {
-  "version_name": [
-      {
-        "name": "folder1_name",
-        "label": "folder1_label",
-        "files": [
-            {
-                "name": "innerFile1_name",
-                "label": "innerFile1_label"
-            }
-        ]
-      }, {
-        "name": "rootFile1_name",
-        "label": "rootFile1_label"
-      }
-  ],
-  "other_version_name": [ ...
-  ]
-}
+██████████▒▒▒▒▒▒▒▒▒▒
+
+3. yo docbase
+
+Welcome to
+    .___           ___.
+  __| _/____   ____\_ |__ _____    ______ ____
+ / __ |/  _ \_/ ___\| __ \\__  \  /  ___// __ \
+/ /_/ (  <_> )  \___| \_\ \/ __ \_\___ \\  ___/
+\____ |\____/ \___  >___  (____  /____  >\___  >
+     \/           \/    \/     \/     \/     \/
+        generator!
+
+...
+
+████████████████████
+
+Docbase is live at: http://127.0.0.1:1234
 ```
 
-where,  
-``version_name`` is the top level field indicating the mapping for a particular documentation version, like v1.0.  
-A version can contain folders and files. ``name`` is the actual
+##  [Read the manual](https://appbaseio.github.io/docbase-manual) [![](http://businessxlerator.com/wp-content/themes/busxl-2015/images/content/icons/book.png)](https://appbaseio.github.io/docbase-manual)
 
-see sample-docbase-config.js to see how to create your own configs.
-## Contributing
+The manual walks through the generator options, and explains docbase options and features. The manual itself is served with docbase.
 
-1. Fork it!
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :D
+
+### Who uses docbase
+
+- [appbase.io](http://docs.appbase.io)
+- [Zeedhi](http://app.zeedhi.com/teknisa/docs/#/)
+ 
+Send a PR with your name here.
+
 
 ## History
+
+v0.2.56 Apr 2 '16
+- Comes with a yeoman generator ``yo docbase``
+- Resizable mobile navigation menu
+- Realtime search with an offline search index
+- No 404s when navigating to folders
+- Updates markdown parser
+- Show github contributors on each documentation page
+- Colorful themes baked in
+
+.  
+.  (54 more releases)  
+.  
 
 v0.0.2 Aug 7 '15
 - All flatdoc theme options supported
 - Customizable root path
 
-v0.0.1 Feb 10 '15
-Initial release
+v0.0.1 Feb 10 '15  
+- Initial release
 
 ## Credits
 
-Henrique Sa (@henriquesa), Appbase
+Henrique Sa (@henriquesa),  
+Mateus Freira (@mateusfreira),  
+Farhan Chauhan (@farhan687),  
+Siddharth Kothari (@siddharthlatest)  
 
 ## License
 

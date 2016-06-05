@@ -1,8 +1,8 @@
 {
-  "name": "angular-route",
+  "name": "angular-sanitize",
   "version": "1.5.6",
   "license": "MIT",
-  "main": "./angular-route.js",
+  "main": "./angular-sanitize.js",
   "ignore": [],
   "dependencies": {
     "angular": "1.5.6"
