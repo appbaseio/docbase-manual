@@ -1,8 +1,8 @@
 # Configuration
 
-``yo docbase`` - the yeoman generator for docbase creates a config file from the user options. For most users, the generator should be all they need to work with docbase.
+``yo docbase`` - the yeoman generator command for docbase creates a config file based on user selected options. For most users, the generator should be all they need to work with docbase.
 
-In this page, we show a sample configuration file and explain how the different options work.
+However, docbase is easily customizable with this config file ``docbase-config.js``. We will show a sample configuration file and explain how to use different options to affect the customization.
 
 ## docbase-config.js options
 
@@ -57,7 +57,7 @@ var docbaseConfig = {
 };
 ```
 
-### Breaking Down
+### Breaking It Down
 
 * ``method`` - Indicates the mode for reading the markdown files.
 * ``file`` - If method is file, docbase will read the ``path`` option from here.
@@ -70,4 +70,4 @@ var docbaseConfig = {
 * ``manual_override`` - If set to true, docbase takes the layout from the config file.
 * ``publish`` - Can be either "local" or "github", denotes where docbase will be deployed.
 
-**``Note:``** ``github.access_token`` is base64 encoded to prevent spamming. However it is not secure, we recommend only providing the necessary permissions (public_repo) for the token. Docbase uses this token to overcome the default rate-limiting restrictions by Github's API, and providing the token is optional.
+**``Note:``** ``github.access_token`` is **base64** encoded to prevent spamming. However it is not secure, we recommend only providing the necessary permissions (public_repo) for the token. Docbase uses this token to overcome the default rate-limiting restrictions by Github's API, and providing the token is optional.
