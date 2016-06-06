@@ -1,3 +1,5 @@
+{"bigh3":true}
+
 # Quick Start
 
 This is a quick start guide for getting up and running with your docbase project.
